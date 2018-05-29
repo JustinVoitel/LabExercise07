@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=RandomNumber
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ RandomNumber\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=RandomNumber()
+comment2.params=
+comment2.target=void\ draw()
+comment3.params=
+comment3.target=void\ printDrawings()
+comment4.params=n
+comment4.target=void\ pickLottoOf(int)
+comment5.params=
+comment5.target=void\ printFrequency()
+numComments=6
