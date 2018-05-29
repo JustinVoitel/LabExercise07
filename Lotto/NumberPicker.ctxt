@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=NumberPicker
+comment1.params=n
+comment1.target=int\ getRandomNR(int)
+comment1.text=\n\ @param\ \ a\ integer\ which\ is\ the\ highest\ number\ the\ random\ picker\ can\ pick\n\ @return\ a\ randomly\ picked\ int\ between\ 0\ and\ @param\ n;\n
+comment2.params=
+comment2.target=java.util.HashSet\ getNonDoubleEntryLottoNumbers()
+comment2.text=\n\ a\ method\ that\ picks\ 6\ random\ numbers\ and\ puts\ them\ i\ a\ hashmap\ to\ make\ sure\ it\n\ doesn't\ pick\ the\ same\ number\ twice\n\n\ @return\ a\ HashSet\ with\ 6\ random\ numbers\ between\ 0,\ 49\n
+comment3.params=n
+comment3.target=int[]\ getLottoResult(int)
+comment3.text=\n\ Here\ we\ check\ the\ frequency\ of\ numbers\ between\ 0,\ 49,\ prints\ and\ return\ a\ frequencyTable.\n\ \n\ @param\ n\ is\ for\ the\ number\ of\ 6\ number\ lotteries\ \n\ @retur\ int\ array\ lottoResult\ with\ frequency\ data\ on\ how\ often\ numbers\ between\ 0,\ 49\ appear\n
+comment4.params=
+comment4.target=void\ getAllTables()
+comment4.text=\n\ Here\ we\ print\ the\ results\ of\ frequency\ from\ 0\ to\ 49,\n\ if\ we\ were\ to\ play\ 1000,\ 10000,\ 100000,\ 1000000\ times\ a\ 6\ number\ lotery.\n\ organized\ in\ a\ table\ and\ printed\ out.\ Code\ idea\ for\ the\ table\ printing\n\ comes\ from\ Stackoverflow.com\ @Luca\ Mastrostefano\n
+numComments=5
