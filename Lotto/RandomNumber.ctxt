@@ -11,4 +11,6 @@ comment4.params=n
 comment4.target=void\ pickLottoOf(int)
 comment5.params=
 comment5.target=void\ printFrequency()
-numComments=6
+comment6.params=
+comment6.target=int\ getCount()
+numComments=7

@@ -1,5 +1,6 @@
 import java.util.Random;
 import java.util.HashSet;
+import java.util.Arrays;
 /**
  * Write a description of class RandomNumber here.
  *
@@ -21,7 +22,12 @@ public class RandomNumber
         while (set.size() < 6){
             int number = randomNum.nextInt(49)+1;
             set.add(number);
-            frequencies[number]++;
+            if(!(set.add(number))){
+                 frequencies[number]++;
+            }else{
+                System.out.println("already exists");
+            }
+           
         }
         set.clear();
     }
@@ -44,6 +50,11 @@ public class RandomNumber
         for(int i=0; i<= frequencies.length-1;i++){
             System.out.println(i + "-->"+ frequencies[i]);
         }
+        System.out.println(getCount());
     }
     
+    public int getCount(){
+        return Arrays.stream(frequencies)
+        .reduce(0,(acc,record)-> acc+record);
+    }
 }
