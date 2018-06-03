@@ -13,6 +13,7 @@ public class RandomNumber
     private int[] frequencies;
     private int[][] freqTable;
     private Random randomNum = new Random();
+    private int dublicates = 0;
     public RandomNumber(){
         set = new HashSet<>();
         frequencies = new int[50];
@@ -22,13 +23,12 @@ public class RandomNumber
     public void drawTable(int i){
         while (set.size() < 6){
             int number = randomNum.nextInt(49)+1;
-            set.add(number);
-            if(!(set.add(number))){
-                 freqTable[i][number]++;
-            }else{
-                System.out.println("already exists");
+            if(!set.contains(number)){
+                set.add(number);
+                freqTable[i][number]++;
+            } else{
+                dublicates++;
             }
-           
         }
         set.clear();
     }
@@ -36,11 +36,11 @@ public class RandomNumber
     public void draw(){
         while (set.size() < 6){
             int number = randomNum.nextInt(49)+1;
-            set.add(number);
-            if(!(set.add(number))){
-                 frequencies[number]++;
-            }else{
-                System.out.println("already exists");
+            if(!set.contains(number)){
+                set.add(number);
+                frequencies[number]++;
+            } else{
+                dublicates++;
             }
            
         }
@@ -81,6 +81,7 @@ public class RandomNumber
                 freqTable[2][i]
                 );
         }
+        System.out.println("count: " + getCountTable() + ", dublicates: " + dublicates);
     }
     
     public void printFrequency(){
@@ -88,11 +89,22 @@ public class RandomNumber
             System.out.println(i + "-->"+ frequencies[i]);
         }
         
-        System.out.println(getCount());
+        System.out.println("count: " + getCount() + ", dublicates: " + dublicates);
     }
     
     public int getCount(){
         return Arrays.stream(frequencies)
         .reduce(0,(acc,record)-> acc+record);
+    }
+    
+    public int getCountTable(){
+        int count1 = Arrays.stream(freqTable[0])
+        .reduce(0,(acc,record)-> acc+record);
+        int count2 = Arrays.stream(freqTable[1])
+        .reduce(0,(acc,record)-> acc+record);
+        int count3 = Arrays.stream(freqTable[2])
+        .reduce(0,(acc,record)-> acc+record);
+        return count1+count2+count3;
+        
     }
 }
