@@ -8,7 +8,7 @@
  * that repeatedly reads input and generates output until the users wants to 
  * leave.
  * 
- * @author     Daan Lockhorst and Justin Voitel
+ * @author     Daan Lockhorst, Justin Voitel and Ella Katajisto 
  * @version    29.05.2018
  */
 import java.util.HashSet;
