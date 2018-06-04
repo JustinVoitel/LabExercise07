@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Responder
+comment1.params=
+comment1.target=Responder()
+comment2.params=
+comment2.target=java.lang.String\ generateResponse()
+comment2.text=\n\ Generate\ a\ response.\n\ @return\ \ \ A\ string\ that\ should\ be\ displayed\ as\ the\ response\n
+comment3.params=input
+comment3.target=java.lang.String\ getResponse(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ randomResponse()
+numComments=5
